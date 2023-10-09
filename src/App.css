@@ -750,7 +750,7 @@
   font-size: 22px;
 }
 .loginForm__container--form-input.password {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   letter-spacing: 0.5px;
   /*font-size: 30px;*/
   font-size: 22px;
@@ -758,12 +758,7 @@
 .loginForm__container--form-input-icon {
   position: absolute;
   margin-left: 415px;
-}
-.loginForm__container--form-input-icon.show {
   margin-top: -56px;
-}
-.loginForm__container--form-input-icon.hide {
-  margin-top: -66px;
 }
 .loginForm__container--form-input:focus {
   outline: none;
