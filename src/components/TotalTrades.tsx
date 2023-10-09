@@ -53,12 +53,12 @@ const TotalTrades: React.FC<TotalTradesProps> = ({ data, totalTrades }) => {
                     <span className="totalTrades__container--content-total-title">{totalTrades[0]}</span>
                     <span className="totalTrades__container--content-total-value">{totalTrades[1]}</span>
                 </div>
-                <div className="totalTrades__container-firstData">
+                <div className="totalTrades__container-firstData" style={data[1][1] > data[0][1] ? { top: "43px", left: "215px"} : {top: "170px", left: "235px"}}>
                     <span className="totalTrades__container--content-data">{data[1][1]}</span>
                     <div className="totalTrades__container--content-line"></div>
                     <span className="totalTrades__container--content-value">{data[1][0]}</span>
                 </div>
-                <div className="totalTrades__container-secondData">
+                <div className="totalTrades__container-secondData" style={data[1][1] > data[0][1] ? { top: "173px", left: "200px"} : {top: "44px", left: "215px"}}>
                     <span className="totalTrades__container--content-data">{data[0][1]}</span>
                     <div className="totalTrades__container--content-line"></div>
                     <span className="totalTrades__container--content-value">{data[0][0]}</span>
