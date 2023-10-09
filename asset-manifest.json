@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/financial_dashboard/static/css/main.7c2250b2.css",
+    "main.css": "/financial_dashboard/static/css/main.83d118fa.css",
     "main.js": "/financial_dashboard/static/js/main.45597f83.js",
     "static/js/787.164a82b9.chunk.js": "/financial_dashboard/static/js/787.164a82b9.chunk.js",
     "index.html": "/financial_dashboard/index.html",
@@ -9,12 +9,12 @@
     "static/media/eye-close.svg": "/financial_dashboard/static/media/eye-close.5b90e6f1c1da7df08e1339f20d5edfa4.svg",
     "static/media/eye-open.svg": "/financial_dashboard/static/media/eye-open.bc27a28503884f239a1a0c7b4540dee4.svg",
     "static/media/login-arrow.svg": "/financial_dashboard/static/media/login-arrow.f7079b591858308061a063f0641b1528.svg",
-    "main.7c2250b2.css.map": "/financial_dashboard/static/css/main.7c2250b2.css.map",
+    "main.83d118fa.css.map": "/financial_dashboard/static/css/main.83d118fa.css.map",
     "main.45597f83.js.map": "/financial_dashboard/static/js/main.45597f83.js.map",
     "787.164a82b9.chunk.js.map": "/financial_dashboard/static/js/787.164a82b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c2250b2.css",
+    "static/css/main.83d118fa.css",
     "static/js/main.45597f83.js"
   ]
 }
