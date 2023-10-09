@@ -78,8 +78,10 @@
   font-family: "Inter", Helvetica;
   font-size: 48px;
   font-style: normal;
-  font-weight: 400;
   line-height: 100%;
+  text-shadow: 0px 0px 14px rgba(254, 229, 229, 0.60);
+  font-weight: 500;
+  letter-spacing: -1.92px;
 }
 .title__container--content-updated {
   color: #FFF;
@@ -1063,9 +1065,11 @@
     color: #FFF;
     font-size: 22px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
+    font-weight: 500;
+    line-height: 26.4px;
     text-transform: uppercase;
+    letter-spacing: 0;
+    font-family: "Inter-Medium", Helvetica;
   }
   .app__container-wrap-content-item.left {
     -webkit-box-ordinal-group: 3;
@@ -1269,5 +1273,26 @@
   }
   .app__container-wrap-content-item.right {
     margin-bottom: 50px;
+  }
+}
+@media screen and (max-height: 512px) {
+  .title__container--content-login {
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  .loginForm__container--form-button-wrap {
+    margin-top: 0;
+  }
+
+  .loginForm__container--form-input {
+    height: 50px;
+  }
+  .loginForm__container--form-input.password {
+    margin-bottom: 10px;
+  }
+  .loginForm__container--form-input-icon.hide {
+    margin-top: -55px;
   }
 }
