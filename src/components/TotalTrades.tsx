@@ -20,6 +20,13 @@ const TotalTrades: React.FC<TotalTradesProps> = ({ data, totalTrades }) => {
             text: '',
         },
         plotOptions: {
+            series: {
+                states: {
+                    hover: {
+                        halo: 0,
+                    }
+                }
+            },
             pie: {
                 dataLabels: {
                     enabled: false,
@@ -30,6 +37,9 @@ const TotalTrades: React.FC<TotalTradesProps> = ({ data, totalTrades }) => {
                 borderRadius: 0,
                 allowPointSelector: false,
             },
+        },
+        tooltip: {
+            enabled: false,
         },
         series: [{
             data: data,

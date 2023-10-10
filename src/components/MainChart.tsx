@@ -11,13 +11,19 @@ const MainChart: React.FC<MainChartProps> = ({ data }) => {
         chart: {
             type: 'pie',
             backgroundColor: 'transparent',
-
         },
         colors: ['#FFFFFFCC', '#FFFFFF99'],
         title: {
             text: '',
         },
         plotOptions: {
+            series: {
+              states: {
+                hover: {
+                    halo: 0,
+                }
+              }
+            },
             pie: {
                 dataLabels: {
                     enabled: false,
@@ -28,6 +34,9 @@ const MainChart: React.FC<MainChartProps> = ({ data }) => {
                 borderRadius: 0,
                 allowPointSelector: false,
             },
+        },
+        tooltip: {
+            enabled: false,
         },
         series: [{
             data: data,

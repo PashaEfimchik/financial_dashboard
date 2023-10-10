@@ -16,6 +16,7 @@ const MonthlyGraph: React.FC<MonthlyGraphProps> = ({ data }) => {
         title: {
             text: 'September',
             className: 'monthlyGraph__title',
+            y: 5,
             style: {
                 color: '#fff',
                 fontFamily: "Inter, 'Helvetica'",
@@ -30,7 +31,7 @@ const MonthlyGraph: React.FC<MonthlyGraphProps> = ({ data }) => {
             },
         },
         subtitle: {
-            y: 30,
+            y: 20,
             text: 'monthly graph',
             className: 'monthlyGraph__subtitle',
             style: {
@@ -104,6 +105,13 @@ const MonthlyGraph: React.FC<MonthlyGraphProps> = ({ data }) => {
             gridLineColor: 'rgba(237, 237, 237, 0.40)',
         },
         plotOptions: {
+            series: {
+                states: {
+                    hover: {
+                        halo: 0,
+                    }
+                }
+            },
             column: {
                 borderRadius: 6,
                 pointWidth: 122,
@@ -113,6 +121,9 @@ const MonthlyGraph: React.FC<MonthlyGraphProps> = ({ data }) => {
                     color: '0px 3.92776px 3.92776px 0px rgba(255, 255, 255, 0.09)',
                 }
             }
+        },
+        tooltip: {
+            enabled: false,
         },
         series: [{
             data: data,
@@ -142,6 +153,11 @@ const MonthlyGraph: React.FC<MonthlyGraphProps> = ({ data }) => {
     return (
         <div className="monthly-graph__container-wrap">
             <div className="monthly-graph__container--content">
+                <div className="monthly-graph__container--content-currency-wrap">
+                    <div className="monthly-graph__container--content-currency">
+                        <span>usd</span>
+                    </div>
+                </div>
                 <HighchartsReact
                     highcharts={Highcharts}
                     options={options}
