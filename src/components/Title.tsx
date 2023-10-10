@@ -6,7 +6,8 @@ interface TitleProps {
 
 const Title: React.FC<TitleProps> = ({ title }) => {
     const currentDateTime = new Date();
-    const formattedDate = currentDateTime.toLocaleDateString();
+    const formattedDateParts = currentDateTime.toLocaleDateString().toString().split('.');
+    const formattedDate = `${formattedDateParts[1]}/${formattedDateParts[0]}/${formattedDateParts[2]}`;
     const formattedTime = currentDateTime.toLocaleTimeString();
     return (
         <div className="title__container">
