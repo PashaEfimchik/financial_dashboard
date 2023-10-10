@@ -31,6 +31,11 @@ const Home = () => {
         logoutUser(dispatch).then(() => navigate('/financial_dashboard/login'));
     }
 
+    function parseStringToFloat(input: string): number {
+        const floatValue: number = parseFloat(input.replace(',','.'));
+        return floatValue;
+    }
+
     return (
         <>
             <div className="App">
@@ -43,8 +48,8 @@ const Home = () => {
                                 <div className="app__container-wrap-content">
                                     <div className="app__container-wrap-content-item left">
                                         <MonthlyGraph data={[
-                                            ["Total funds allocated", parseFloat(data[0][4])],
-                                            ["Total profit from closed trades", parseFloat(data[0][5])],
+                                            ["Total funds allocated", parseStringToFloat(data[0][4])],
+                                            ["Total profit from closed trades", parseStringToFloat(data[0][5])],
                                         ]}/>
                                         <TotalTrades data={[
                                             ["Open", parseFloat(data[0][10])],
