@@ -29,10 +29,10 @@ function App() {
     return (
       <BrowserRouter>
           <Routes>
-              <Route path="/financial_dashboard/home" element={ isAuth ? <Home /> : <Navigate to="/financial_dashboard/login" replace /> } />
-              <Route path="/financial_dashboard/login" element={<LoginForm handleLoginIsAuth={() => setIsAuth(true)} />} />
+              <Route path="/home" element={ isAuth ? <Home /> : <Navigate to="/login" replace /> } />
+              <Route path="/login" element={<LoginForm handleLoginIsAuth={() => setIsAuth(true)} />} />
 
-              <Route path="*" element={<Navigate to="/financial_dashboard/home" replace />} />
+              <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
       </BrowserRouter>
   );
