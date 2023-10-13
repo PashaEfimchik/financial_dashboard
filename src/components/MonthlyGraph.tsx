@@ -7,6 +7,13 @@ interface MonthlyGraphProps {
 }
 
 const MonthlyGraph: React.FC<MonthlyGraphProps> = ({ data }) => {
+    const currentDateTime = new Date();
+    const optionsDate: Intl.DateTimeFormatOptions = {
+        month: 'long',
+    };
+
+    const formattedDate = currentDateTime.toLocaleDateString('en-US', optionsDate);
+
     const options = {
         chart: {
             type: 'column',
@@ -14,7 +21,7 @@ const MonthlyGraph: React.FC<MonthlyGraphProps> = ({ data }) => {
             width: 378,
         },
         title: {
-            text: 'September',
+            text: formattedDate,
             className: 'monthlyGraph__title',
             y: 5,
             style: {
