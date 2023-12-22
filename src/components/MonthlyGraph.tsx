@@ -12,7 +12,7 @@ const MonthlyGraph: React.FC<MonthlyGraphProps> = ({ data }) => {
         month: 'long',
     };
 
-    const formattedDate = currentDateTime.toLocaleDateString('en-US', optionsDate);
+    //const formattedDate = currentDateTime.toLocaleDateString('en-US', optionsDate);
 
     const options = {
         chart: {
@@ -21,7 +21,7 @@ const MonthlyGraph: React.FC<MonthlyGraphProps> = ({ data }) => {
             width: 378,
         },
         title: {
-            text: formattedDate,
+            text: "Total",
             className: 'monthlyGraph__title',
             y: 5,
             style: {
@@ -39,7 +39,7 @@ const MonthlyGraph: React.FC<MonthlyGraphProps> = ({ data }) => {
         },
         subtitle: {
             y: 20,
-            text: 'monthly graph',
+            text: '',
             className: 'monthlyGraph__subtitle',
             style: {
                 color: '#fff',
